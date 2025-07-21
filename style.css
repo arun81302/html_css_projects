@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+html {
+  font-size: 13px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 253px);
+  gap: 20px;
+}
+.daniel {
+  grid-column: span 2;
+  background-color: hsl(263, 55%, 52%);
+}
+.daniel h2,
+.daniel p,
+.daniel span {
+  color: hsl(260, 100%, 95%);
+}
+
+.Jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+.Jonathan h2,
+.Jonathan p,
+.Jonathan span {
+  color: hsl(214, 17%, 92%);
+}
+
+.Kira {
+  grid-row: span 2;
+}
+.Kira h2,
+.Kira p,
+.Kira span {
+  color: hsl(217, 19%, 35%);
+}
+.patrick {
+  grid-column: span 2;
+  background-color: hsl(219, 29%, 14%);
+}
+.patrick h2,
+.patrick p,
+.patrick span {
+  color: whitesmoke;
+}
+.upper {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.text {
+  justify-self: flex-start;
+  align-self: center;
+  padding-left: 1rem;
+}
+img {
+  border-radius: 50%;
+  width: 100%;
+}
+.box {
+  padding: 13px 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px rgba(51, 50, 50, 0.458);
+}
+.text p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.text span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+article h2 {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+@media screen and (max-width:375px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  main {
+    max-width: 260px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .box {
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 370px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .Kira{
+      order: 5;
+  }
+}
